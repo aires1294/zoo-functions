@@ -13,6 +13,6 @@ function getRelatedEmployees(managerId) {
   return employees.filter((funcionario) => funcionario.managers.includes(managerId))
     .map((abaixo) => `${abaixo.firstName} ${abaixo.lastName}`);
 }
-console.log(isManager('9e7d4524-363c-416a-8759-8aa7e50c0992'));
+// console.log(isManager('9e7d4524-363c-416a-8759-8aa7e50c0992'));
 console.log(getRelatedEmployees('9e7d4524-363c-416a-8759-8aa7e50c0992'));
 module.exports = { isManager, getRelatedEmployees };
