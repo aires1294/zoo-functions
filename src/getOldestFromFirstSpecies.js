@@ -4,7 +4,7 @@ const { employees } = data;
 const { species } = data;
 
 function getOldestFromFirstSpecies(id) {
-  const idEmployee = employees.find((funcionario) => funcionario.id === id).responsibleFor[0];  
+  const idEmployee = employees.find((funcionario) => funcionario.id === id).responsibleFor[0];
   // const idAnimal = idEmployee.reduce((older, actual) => {
   //   if (older.residents.age > actual.residents.age) {
   //     return older;
