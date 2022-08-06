@@ -18,7 +18,7 @@ function calculateEntry(entrants) {
   if (!entrants || entrants.length === undefined) {
     return 0;
   }
-  const value = data.prices
+  const value = data.prices;
   const { child, adult, senior } = countEntrants(entrants);
   let result = 0;
 
