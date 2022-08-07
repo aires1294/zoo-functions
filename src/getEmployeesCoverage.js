@@ -3,9 +3,12 @@ const { employees, species } = require('../data/zoo_data');
 
 function montaObjeto(funcionario) {
   const idEmployee = funcionario.id;
+  // console.log(idEmployee);
   const fullName = `${funcionario.firstName} ${funcionario.lastName}`;
+  console.log(fullName);
   const allSpecies = funcionario.responsibleFor.map((specieId) => species
     .find((nome) => nome.id === specieId).name);
+  // console.log(allSpecies);
   const location = funcionario.responsibleFor.map((specieId) => species
     .find((nome) => nome.id === specieId).location);
   return {
